@@ -46,3 +46,7 @@ Functions that return an actions, which consists of the type and an optional
 payload containing data.
 
 - Finally we make an async action that combines all actions using thunk.
+
+## Respond to actions
+
+- Import posts actions to posts reducers
