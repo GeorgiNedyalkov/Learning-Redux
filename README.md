@@ -50,3 +50,23 @@ payload containing data.
 ## Respond to actions
 
 - Import posts actions to posts reducers
+- Create a switch case for all action types that describes how state is changed.
+
+## Connect Redux to React Components
+
+- Set up React Router
+- Create Dashboard Page
+- Create Posts Page
+- Create Post component
+
+- Connect to Redux
+
+First we bring in `connect`. The connection function (high order function)
+that connects Redux Store to React Component.
+
+We create a mapStateToProps that pams state to react component props
+and pass it as a parameter to the connect function.
+
+Finally, we bring the async `fetchPosts` from the actions, and using `useEffect`
+we `dispatch` `fetchPosts` when the component mounts. Dispatch will automatically be available
+on a connected component.
