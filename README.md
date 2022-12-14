@@ -33,3 +33,16 @@ We can have many reducers and combine them into one root reducer using `combineR
 ## Create a posts reducer
 
 with initial state that has an array of all posts, bool is it loading and bool if it has errors.
+
+## Set up Redux Actions
+
+Actions are how we communicate with redux store.
+
+- We first define action types as constants to avoid typos as a best practice.
+
+- Then we create _action creators_
+
+Functions that return an actions, which consists of the type and an optional
+payload containing data.
+
+- Finally we make an async action that combines all actions using thunk.
